@@ -22,10 +22,17 @@ overview of CPE
 -How many neurons, layers, and activation functions did you select for your neural network model, and why?
 - Were you able to achieve the target model performance?
 - What steps did you take to try and increase model performance?
+Initial output of model:
+![fig1](https://github.com/retroxsky06/Neural_Network_Charity_Analysis/blob/main/images/initial.png)
 
-Attempt 1: increased to 80, 60
+Optimization Attempt 1: increased neurons
+![fig2](https://github.com/retroxsky06/Neural_Network_Charity_Analysis/blob/main/images/attempt_1_relu_neurons.png)
+
 Attempt 2: added an extra layer = did not work, decreased
+![fig3](https://github.com/retroxsky06/Neural_Network_Charity_Analysis/blob/main/images/attempt2_added_layer.png)
+
 Attempt 3: change function to tanh
+![fig4](https://github.com/retroxsky06/Neural_Network_Charity_Analysis/blob/main/images/attempt3_tanh.png)
 
 ## Summary
 Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
