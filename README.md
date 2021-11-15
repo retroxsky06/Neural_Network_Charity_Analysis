@@ -14,13 +14,19 @@ The purpose of this project is to apply a Neural Network Machine Learning Model 
 Results: Using bulleted lists and images to support your answers, address the following questions.
 
 ### Data Preprocessing
-do a overview of the preprocessing
-- What variable(s) are considered the target(s) for your model?
-- What variable(s) are considered to be the features for your model?
-- What variable(s) are neither targets nor features, and should be removed from the input data?
+Prior to analysis, the csv dataset is first read into a Pandas DataFrame and then cleaned and transformed. The preprocessing method includes:   
+1) Dropping the columns 'EIN' and 'NAME' as they do not contain any valuable information.
+2) Binning the columns, 'CLASSIFICATION' and 'APPLICATION_TYPE' as they have more than 10 uniqiue values (rare categorical data points) into a new column, 'Other.'
+3) Generating a list of categorical variables and encoding the list using OneHotEncoder; then storing encoded variables in a new DataFrame.
+4) Finally, merging the one-hot encoded DataFrame with the orifinal DataFrame and dropping the originals.
+
+**Features & Target for the model:**
+The variable considered the **target** for the model is 'IS_SUCCESSFUL.'  The remaining colmumns in the DataFrame are considered the **features.**
+
+**Neither targets or features:**
+The variables that were not considered to be either features or targets are 'ID' and 'EIN,' as they did not contain any valuable information for the neural netwrok algorithm.
 
 ### Compiling, Training, and Evaluating the Model
-overview of CPE
 
 - How many neurons, layers, and activation functions did you select for your neural network model, and why?
 - Were you able to achieve the target model performance?
@@ -39,6 +45,8 @@ Attempt 3: change function to tanh
 ![fig4](https://github.com/retroxsky06/Neural_Network_Charity_Analysis/blob/main/images/attempt3_tanh.png)
 
 ## Summary
+Through several optimization trials, none of the attempts were able to produce a model with a predictive accuracy of 75% or higher.
+
 Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
 
 
