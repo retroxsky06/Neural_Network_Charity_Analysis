@@ -29,26 +29,29 @@ The variables that were not considered to be either features or targets are 'ID'
 ### Compiling, Training, and Evaluating the Model
 After preprocessing the data, a neural network model is designed to create a binary classification model that can predict if an "Alphabet Soup" funded organization will be successful based on the features in the dataset. 
 
-- How many neurons, layers, and activation functions did you select for your neural network model, and why?
-- Were you able to achieve the target model performance?
-- What steps did you take to try and increase model performance?
-
 **Initial output of model:**
 
 ![fig1](https://github.com/retroxsky06/Neural_Network_Charity_Analysis/blob/main/images/initial.png)
-- For the initial iteration of the model, two hidden layers were applied with 80 neurons in the first, while 6 in the second. A Rectified Linear Unit (ReLU) is used as the activation function for both the first and second hidden layers, while Sigmoid is used as the outer layer activation function.  
+For the initial iteration of the model, two hidden layers were applied with 8 neurons in the first layer, while 6 were selected in the second. A Rectified Linear Unit (ReLU) is used as the activation function for both the first and second hidden layers, while Sigmoid is used as the outer layer activation function.  
+Although a predictive accuracy of 72.6% is achieved, we would like to optimize our model using TensorFlow to attain a target predictive accuracy of 75% or higher.  Results of four attempts made are displayed below.
 
 **Optimization Attempt 1: Increased neurons**
 
 ![fig2](https://github.com/retroxsky06/Neural_Network_Charity_Analysis/blob/main/images/attempt_1_relu_neurons.png)
-- 
+The first attempt to optimize the model was to increase the neurons in the hidden layers, with 15 applied to the first layer, and 10 to the second. This had a positive affect as the accuracy became 72.7%; however it did not meet the 75% or higher goal.
+
 **Optimization Attempt 2: Added a third hidden layer**
 
 ![fig3](https://github.com/retroxsky06/Neural_Network_Charity_Analysis/blob/main/images/attempt2_added_layer.png)
+The second attempt to optimize the model was to add a third layer with 10 neurons, while retaining the first attempt neurons (15 and 10). This change reduced the model's accuracy to 72.3%. Due to the negative effect of this added layer, it was removed from the model.
 
 **Attempt 3: Changed function to tanh**
 
 ![fig4](https://github.com/retroxsky06/Neural_Network_Charity_Analysis/blob/main/images/attempt3_tanh.png)
+The third attempt to optimize the model was to change the second layer's activation function to 'tanh,' while retaining the first attempt neurons (15 and 10). The predictive accuracy rate was 72.5%. 
+
+**Optimization Attempt 4: Increase neurons from Attempt 1**
+The first attempt to optimize the model seemed promising as there was a slight increase from the initial iteration. A fourth attempt was made by increasing the two hidden layers, with 80 applied to the first layer, and 40 applied to the second.  
 
 ## Summary
 Through several optimization trials, none of the attempts were able to produce a model with a predictive accuracy of 75% or higher.
