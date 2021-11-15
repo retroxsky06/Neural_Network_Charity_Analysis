@@ -27,13 +27,15 @@ The variable considered the **target** for the model is 'IS_SUCCESSFUL.'  The re
 The variables that were not considered to be either features or targets are 'ID' and 'EIN,' as they did not contain any valuable information for the neural netwrok algorithm.
 
 ### Compiling, Training, and Evaluating the Model
+After preprocessing the data, a neural network model is designed to create a binary classification model that can predict if an "Alphabet Soup" funded organization will be successful based on the features in the dataset. 
 
 - How many neurons, layers, and activation functions did you select for your neural network model, and why?
 - Were you able to achieve the target model performance?
 - What steps did you take to try and increase model performance?
 
-Initial output of model:
+**Initial output of model:**
 ![fig1](https://github.com/retroxsky06/Neural_Network_Charity_Analysis/blob/main/images/initial.png)
+- For the initial iteration of the model, two layers were applied with 80 neurons in the first layer, while 6 in the second. A Rectified Linear Unit (ReLU) is used as the activation function for both the first and second hidden layers, while Sigmoid is used as the outer layer activation function.  
 
 Optimization Attempt 1: increased neurons
 ![fig2](https://github.com/retroxsky06/Neural_Network_Charity_Analysis/blob/main/images/attempt_1_relu_neurons.png)
