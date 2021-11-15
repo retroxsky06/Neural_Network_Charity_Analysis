@@ -10,9 +10,6 @@ The purpose of this project is to apply a Neural Network Machine Learning Model 
 - Data: [charity_data.csv](https://github.com/retroxsky06/Neural_Network_Charity_Analysis/blob/main/Resources/charity_data.csv)
 
 ## Results
-
-Results: Using bulleted lists and images to support your answers, address the following questions.
-
 ### Data Preprocessing
 Prior to analysis, the csv dataset is first read into a Pandas DataFrame and then cleaned and transformed. The preprocessing method includes:   
 1) Dropping the columns 'EIN' and 'NAME' as they do not contain any valuable information.
@@ -24,7 +21,7 @@ Prior to analysis, the csv dataset is first read into a Pandas DataFrame and the
 The variable considered the **target** for the model is 'IS_SUCCESSFUL.'  The remaining colmumns in the DataFrame are considered the **features.**
 
 **Neither targets or features:**
-The variables that were not considered to be either features or targets are 'ID' and 'EIN,' as they did not contain any valuable information for the neural netwrok algorithm.
+The variables that were not considered to be either features or targets are 'ID' and 'EIN,' as they did not contain any valuable information for the neural network algorithm.
 
 ### Compiling, Training, and Evaluating the Model
 After preprocessing the data, a neural network model is designed to create a binary classification model that can predict if an "Alphabet Soup" funded organization will be successful based on the features in the dataset. 
@@ -51,12 +48,11 @@ The second attempt to optimize the model was to add a third layer with 10 neuron
 The third attempt to optimize the model was to change the second layer's activation function to 'tanh,' while retaining the first attempt neurons (15 and 10). The predictive accuracy rate was 72.5%. 
 
 **Optimization Attempt 4: Increase neurons from Attempt 1**
-The first attempt to optimize the model seemed promising as there was a slight increase from the initial iteration. A fourth attempt was made by increasing the two hidden layers, with 80 applied to the first layer, and 40 applied to the second.  
+
+![fig4](https://github.com/retroxsky06/Neural_Network_Charity_Analysis/blob/main/images/attempt4.png)
+The first attempt to optimize the model seemed promising as there was a slight increase from the initial iteration. To further explore if increased neurons would be a favorable change to the model, a fourth attempt was made by increasing the two hidden layers, with 80 applied to the first layer, and 60 applied to the second. The significant increase of neurons on both hidden layers decreased the predictive accuracy to 72.5%.
 
 ## Summary
-Through several optimization trials, none of the attempts were able to produce a model with a predictive accuracy of 75% or higher.
-
-Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
-
+Through several optimization trials, none of the attempts were able to produce a model with a predictive accuracy of 75% or higher.  A variety of reasons may be occurring as to why the model did not achieve the 75% or higher goal, which may include the epochs needing to be changed during the training phase, the input data may harbor outliers that are causing confusion in the model, and/or the activation functions need to be altered. Additionally, a different model may be utilized, such as a Random Forest Classifier, that can hold complex data while being much simpler to build and train.  
 
 
