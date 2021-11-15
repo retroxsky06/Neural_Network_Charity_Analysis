@@ -1,7 +1,7 @@
 # Neural Network Charity Analysis
 
 ## Project Overview
-The purpose of this project is to apply a Neural Network Machine Learning Model to create a binary classifier that is capable of predicting whether applicants will be successful if funded by a fictional company, "Alphabet Soup."  A csv dataset is preprocessed, compiled, trained, and evaluated.  Lastly, several attempts are made to optimize the model in hopes to increase the accuracy to 75% or higher.
+The purpose of this project is to apply a Neural Network Deep Learning Model to create a binary classifier that is capable of predicting whether applicants will be successful if funded by a fictional company, "Alphabet Soup."  A csv dataset is preprocessed, compiled, trained, and evaluated.  Lastly, several attempts are made to optimize the model in hopes to increase the accuracy to 75% or higher.
 
 ### Software & Resources
 - Python
