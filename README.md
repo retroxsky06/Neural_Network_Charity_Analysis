@@ -34,16 +34,20 @@ After preprocessing the data, a neural network model is designed to create a bin
 - What steps did you take to try and increase model performance?
 
 **Initial output of model:**
+
 ![fig1](https://github.com/retroxsky06/Neural_Network_Charity_Analysis/blob/main/images/initial.png)
-- For the initial iteration of the model, two layers were applied with 80 neurons in the first layer, while 6 in the second. A Rectified Linear Unit (ReLU) is used as the activation function for both the first and second hidden layers, while Sigmoid is used as the outer layer activation function.  
+- For the initial iteration of the model, two hidden layers were applied with 80 neurons in the first, while 6 in the second. A Rectified Linear Unit (ReLU) is used as the activation function for both the first and second hidden layers, while Sigmoid is used as the outer layer activation function.  
 
-Optimization Attempt 1: increased neurons
+**Optimization Attempt 1: Increased neurons**
+
 ![fig2](https://github.com/retroxsky06/Neural_Network_Charity_Analysis/blob/main/images/attempt_1_relu_neurons.png)
+- 
+**Optimization Attempt 2: Added a third hidden layer**
 
-Attempt 2: added an extra layer = did not work, decreased
 ![fig3](https://github.com/retroxsky06/Neural_Network_Charity_Analysis/blob/main/images/attempt2_added_layer.png)
 
-Attempt 3: change function to tanh
+**Attempt 3: Changed function to tanh**
+
 ![fig4](https://github.com/retroxsky06/Neural_Network_Charity_Analysis/blob/main/images/attempt3_tanh.png)
 
 ## Summary
